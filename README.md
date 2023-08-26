@@ -9,5 +9,9 @@ https://foss4g.tistory.com/1624 참고
 5. 플랫폼 > 웹 > `https://www.google.co.kr` 등록
 6. 구글 크롬 기준, 새 시크릿 창 > `https://kauth.kakao.com/oauth/authorize?client_id={REST API}&redirect_uri=https://localhost:8000&response_type=code&scope=talk_message,friends` > `https://localhost:8000/?code={code}` > `code 부분 복사하기`
 
+## 사용 방법
+python app.py -add `handle` : 사용자명이 handle인 사용자를 추가합니다.
+python app.py : 프로그램을 실행합니다. 10분 주기로 메시지의 전송 여부가 정해집니다.
+
 ## 참고 사이트
 [메시지 템플릿](https://developers.kakao.com/docs/latest/ko/message/message-template)
