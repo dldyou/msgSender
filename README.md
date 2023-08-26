@@ -11,6 +11,7 @@ https://foss4g.tistory.com/1624 참고
 
 ## 사용 방법
 python app.py -add `handle` : 사용자명이 handle인 사용자를 추가합니다.
+
 python app.py : 프로그램을 실행합니다. 10분 주기로 메시지의 전송 여부가 정해집니다.
 
 ## 참고 사이트
