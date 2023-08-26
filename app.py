@@ -64,6 +64,8 @@ def addUser(handle):
 
 def check():
     global users
+    with open("./user.json", "r") as f:
+        users = json.load(f)
     for handle in users.keys():
         solved = findUser(handle)["items"][0]["solvedCount"]
         if (solved != users[handle]["solved"]):
@@ -76,7 +78,7 @@ def check():
                 json.dump(users, f)
         else:
             print(f'{handle}님이 아직 문제를 안 풀었습니다')
-    threading.Timer(60, check).start()
+    threading.Timer(600, check).start()
 
 def main():
     argv = sys.argv
